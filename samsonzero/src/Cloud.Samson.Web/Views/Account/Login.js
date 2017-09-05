@@ -10,7 +10,7 @@
                     required: true
                 },
                 password: {
-                    required: true
+                    required: true 
                 }
             }
         });
@@ -47,6 +47,16 @@
     return {
         init: function () {
             handleLogin();
+            $.backstretch([
+                "../../metronic/assets/pages/media/bg/1.jpg",
+                "../../metronic/assets/pages/media/bg/2.jpg",
+                "../../metronic/assets/pages/media/bg/3.jpg",
+                "../../metronic/assets/pages/media/bg/4.jpg"
+            ], {
+                    fade: 1000,
+                    duration: 8000
+                }
+            );
         }
     };
 
